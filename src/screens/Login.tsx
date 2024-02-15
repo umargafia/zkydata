@@ -6,8 +6,10 @@ import ExpoStatusBar from 'expo-status-bar/build/ExpoStatusBar';
 import { WindowConstant } from '../utilities/Theme';
 import Form from '../components/login/Form';
 import { Image } from 'expo-image';
+import useDetectInternet from '../components/global/detectInternet';
 
 export default function Login() {
+  useDetectInternet();
   return (
     <Box flex={1}>
       <ExpoStatusBar style="light" />
